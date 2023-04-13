@@ -1,0 +1,13 @@
+Demo_Dbt:
+  outputs:
+    dev:
+      account: hk68763.ap-southeast-1
+      password: Bhagyesh#2001
+      role: ACCOUNTADMIN
+      database: DEMO_DB
+      schema: PUBLIC
+      threads: 10
+      type: snowflake
+      user: BHAGYESHBHUT
+      warehouse: COMPUTE_WH
+  target: dev

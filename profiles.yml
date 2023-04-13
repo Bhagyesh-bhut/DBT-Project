@@ -4,8 +4,8 @@ Demo_Dbt:
       account: hk68763.ap-southeast-1
       password: Bhagyesh#2001
       role: ACCOUNTADMIN
-      database: DEMO_DB
-      schema: PUBLIC
+      database: SNOWFLAKE_SAMPLE_DATA
+      schema: TPCH_SF1
       threads: 10
       type: snowflake
       user: BHAGYESHBHUT

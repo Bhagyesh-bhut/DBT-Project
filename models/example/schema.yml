@@ -16,6 +16,8 @@ models:
                   config:
                     store_failures: true
                     severity: warn
+                    warn_if: ">10"
+                    error_if: ">1000"
               
 
     - name: my_second_dbt_model

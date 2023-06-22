@@ -1,28 +1,25 @@
-
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-              - unique :
-                  config:
-                    store_failures: true
-                    severity: warn
-              - not_null:
-                  config:
-                    store_failures: true
-                    severity: warn
-                    warn_if: ">10"
-                    error_if: ">1000"
-              
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique:
+              config:
+                store_failures: true
+                severity: warn
+          - not_null:
+              config:
+                store_failures: true
+                severity: warn
+                warn_if: ">10"
+                error_if: ">1000"
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
